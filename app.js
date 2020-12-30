@@ -50,7 +50,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-mongoose.connect("mongodb+srv://maryam_012:maryam_0123@cluster0.uk6gw.mongodb.net/test",{ useNewUrlParser: true ,useUnifiedTopology: true}).then(()=>{
+mongoose.connect("mongodb+srv://IsraMueen:arhumjee1@cluster0.9tyse.mongodb.net/test",{ useNewUrlParser: true ,useUnifiedTopology: true}).then(()=>{
   console.log("Connection to mongoDB Successfull");
 }).catch((err)=>{
 console.log("Connection error");
