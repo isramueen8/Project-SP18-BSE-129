@@ -8,16 +8,12 @@ block content
             tr  
                 th Item Name
                 th Item Price
-                th Quantity
-                th More Details
         each item in cart
             - total += Number(item.price)
             tbody
                 tr
                     td=item.name        
                     td=item.price
-                    td=item.quantity
-                    td=item.detail
                     td
                         a(href="cart/remove/"+item._id ,class="btn btn-danger") Remove
         tfoot
