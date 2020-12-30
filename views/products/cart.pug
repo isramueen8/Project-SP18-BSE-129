@@ -1,4 +1,4 @@
-extends ../layout
+        extends ../layout
 
 block content 
     h1 Food Added in Cart
@@ -16,12 +16,11 @@ block content
                 tr
                     td=item.name        
                     td=item.price
-                    td=item.Quantity
+                    td=item.quantity
                     td=item.detail
                     td
                         a(href="cart/remove/"+item._id ,class="btn btn-danger") Remove
         tfoot
             tr
                 th Total        
-                th=total          
-
+                th=total       
