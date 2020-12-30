@@ -12,11 +12,16 @@ block content
                 tr
                     th Item Name
                     th Item Price
+                    th Quantiy
+                    th More Details
             tbody
                 each product in products
                     tr 
                         td=product.name
                         td=product.price
+                        td=product.cheesy
+                        td=product.Quantity
+                        td=product.detail
                         td  
                             a(href="/products/delete/"+product._id    class="btn btn-danger") Delete
                             a(href="/products/edit/"+product._id    class="btn btn-info") Edit
