@@ -10,7 +10,6 @@ block content
                 th Item Price
                 th Quantity
                 th More Details
-                th cheesy
         each item in cart
             - total += Number(item.price)
             tbody
@@ -19,7 +18,6 @@ block content
                     td=item.price
                     td=item.Quantity
                     td=item.detail
-                    td=cheesy
                     td
                         a(href="cart/remove/"+item._id ,class="btn btn-danger") Remove
         tfoot
